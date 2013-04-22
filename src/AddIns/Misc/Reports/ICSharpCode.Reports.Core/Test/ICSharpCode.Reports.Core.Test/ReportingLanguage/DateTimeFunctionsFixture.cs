@@ -9,6 +9,8 @@ using SimpleExpressionEvaluator;
 namespace ICSharpCode.Reports.Core.Test.ReportingLanguage.LanguageTests
 {
 	[TestFixture]
+    // Needed for DateDiff tests to make the correct assumptions about the ordering of months and days in a date
+    [SetCulture("en-GB")] 
 	public class DateTimeFunctionsFixture
 	{
 	
